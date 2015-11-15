@@ -2,7 +2,7 @@
 protocol = http
 host = localhost:5984
 user = {user}
-password = {password}
+password = {password} # in base64!!!
 
 [remote]
 protocol = https
@@ -10,4 +10,4 @@ host = {cloudant_user}.cloudant.com
 # Note: these may *not* be Cloudant API key/secret pairs if using backup.py as
 # API keys do not have DB create priviledges
 user = {cloudant_user}
-password = {password}
+password = {password} # in base64!!!
